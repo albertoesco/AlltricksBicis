@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickBici"
+    card_view:cardBackgroundColor="@color/moradoc"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="1dp"
+    android:layout_margin="2dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="10dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivRowBici"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bici2p"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRowBici"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        card_view:layout_constraintStart_toEndOf="@+id/ivRowBici"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivRowBiciFav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:srcCompat="@android:drawable/star_on" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
